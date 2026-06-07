@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+modelbudget-mvp/logs/
+tmp/
+.DS_Store
