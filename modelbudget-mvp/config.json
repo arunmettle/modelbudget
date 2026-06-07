@@ -1,0 +1,49 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "logging": {
+    "storePrompts": false,
+    "logFile": "modelbudget-mvp/logs/requests.jsonl"
+  },
+  "budget": {
+    "dailyUsd": 5
+  },
+  "providers": {
+    "mode": "mock",
+    "allowCloudForwarding": false,
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "apiKey": "ollama"
+    },
+    "openaiCompatible": {
+      "baseUrl": "",
+      "apiKeyEnv": "MODEL_BUDGET_PROVIDER_API_KEY"
+    }
+  },
+  "privacy": {
+    "privatePathPatterns": [".env", "secrets", "credentials", "client_data", "private_docs", "api_key"]
+  },
+  "models": {
+    "premium": {
+      "name": "premium-frontier",
+      "inputPerMillion": 3,
+      "outputPerMillion": 15
+    },
+    "cheap": {
+      "name": "cheap-cloud",
+      "inputPerMillion": 0.2,
+      "outputPerMillion": 0.8
+    },
+    "local": {
+      "name": "local-ollama",
+      "inputPerMillion": 0,
+      "outputPerMillion": 0
+    }
+  },
+  "routing": {
+    "simpleTaskKeywords": ["summary", "summarize", "classify", "test error", "readme", "dependency"],
+    "hardTaskKeywords": ["architecture", "refactor", "multi-file", "security review", "design"]
+  }
+}
