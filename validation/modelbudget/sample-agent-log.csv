@@ -1,0 +1,9 @@
+timestamp,tool,task,model,input_tokens,output_tokens,estimated_cost_usd,private_path
+2026-06-07T09:00:00Z,coding-agent,repo-summary,gpt-4.1,12000,800,0.032,false
+2026-06-07T09:03:00Z,coding-agent,test-error-explanation,gpt-4.1,4500,700,0.014,false
+2026-06-07T09:08:00Z,coding-agent,file-edit,gpt-4.1,9000,1200,0.027,false
+2026-06-07T09:14:00Z,coding-agent,env-file-review,gpt-4.1,1800,300,0.006,true
+2026-06-07T09:20:00Z,coding-agent,multi-file-refactor,claude-sonnet,30000,2200,0.094,false
+2026-06-07T09:31:00Z,coding-agent,dependency-summary,gpt-4.1,7000,650,0.020,false
+2026-06-07T09:38:00Z,coding-agent,README-draft,gpt-4.1,6000,900,0.020,false
+2026-06-07T09:45:00Z,coding-agent,architecture-plan,claude-sonnet,26000,1800,0.080,false
